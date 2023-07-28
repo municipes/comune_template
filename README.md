@@ -9,7 +9,7 @@ It's just composer, isn't it awesome? :)
 ## Installation of Comune Silfi
 
 ```
-composer create-project municipes/comune_template:1.x DIRECTORY --no-interaction
+composer create municipes/comune_template:1.x DIRECTORY --no-interaction
 ```
 
 Composer will create a new directory called DIRECTORY.
