@@ -27,7 +27,7 @@
         }
     ],
     "require": {
-        "municipes/comune": "~1.0",
+        "municipes/comune": "~10.0",
         "php": "^8.1",
         "monolog/monolog": "^2.3.5"
     },

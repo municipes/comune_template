@@ -6,10 +6,28 @@ This is a composer based installer for the [Comune Silfi](https://www.drupal.org
 
 It's just composer, isn't it awesome? :)
 
+## Installazione
+Per installare il CMS Comune procedi così
+1) Installa il codice:
+```shell
+$ composer create municipes/comune_template project-name --no-install
+$ cd project-name
+$ composer require drush/drush --no-install
+$ composer install
+```
+2) Configura Drupal eseguendo [setup_step02](scripts/setup_step02__configure_drupal.sh)
+3) Configura Comune eseguendo [setup_step03](scripts/setup_step03__configure_municipes.sh)
+
+Se usi ddev puoi installare tutto con un unico comando, esegui [ddev_installer](scripts/municipes_ddev_installer.sh)
+```shell
+bash <(curl -s -H "Cache-Control: no-cache" "https://raw.githubusercontent.com/municipes/comune_template/10.x/scripts/municipes_ddev_installer.sh")
+```
+
+
 ## Installation of Comune Silfi
 
 ```
-composer create municipes/comune_template:1.x DIRECTORY --no-interaction
+composer create municipes/comune_template:10.x DIRECTORY --no-interaction
 ```
 
 Composer will create a new directory called DIRECTORY.
