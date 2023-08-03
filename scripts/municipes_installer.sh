@@ -191,7 +191,8 @@ done
 echo " "
 n "Installo Municipes codebase" notice
 echo "------------------------------------"
-composer create municipes/comune_template:${municipesCodebaseInstallVersion} --no-install --no-cache
+composer create municipes/comune_template ${municipesCodebaseInstallVersion} --no-install --no-cache
+
 
 echo " "
 n "Do i permessi di esecuzione agli script di installazione" notice
