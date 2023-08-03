@@ -180,8 +180,6 @@ fi
 # mkdir "$project_name"
 # cd "$project_name" || exit
 
-base_path=$(pwd)
-
 # Password di admin
 read -r -p "Inserisci la password di admin [minimo 12 caratteri] (random): " adminPass
 while [[ -z $adminPass || ${#adminPass} -lt 12 ]]; do
@@ -192,7 +190,8 @@ echo " "
 n "Installo Municipes codebase" notice
 echo "------------------------------------"
 composer create municipes/comune_template:${municipesCodebaseInstallVersion} $project_name --no-install --no-cache
-
+cd "$project_name" || exit
+base_path=$(pwd)
 
 echo " "
 n "Do i permessi di esecuzione agli script di installazione" notice
