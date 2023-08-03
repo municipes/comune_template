@@ -176,9 +176,9 @@ if [ -d "$project_name" ]; then
   exit
 fi
 
-echo "Make ${project_name}"
-mkdir "$project_name"
-cd "$project_name" || exit
+# echo "Make ${project_name}"
+# mkdir "$project_name"
+# cd "$project_name" || exit
 
 base_path=$(pwd)
 
