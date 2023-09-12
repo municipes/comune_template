@@ -27,9 +27,13 @@
         }
     ],
     "require": {
-        "municipes/comune": "~10.0",
         "php": "^8.1",
-        "monolog/monolog": "^2.3.5"
+        "bower-asset/jquery-simple-color": "^1.2",
+        "bower-asset/spectrum": "^1.8",
+        "drush/drush": "^11.6",
+        "monolog/monolog": "^2.3.5",
+        "municipes/comune": "~10.0",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10.1"
@@ -45,11 +49,17 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
+                "type:bower-asset",
+                "type:npm-asset",
                 "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": [
@@ -101,7 +111,8 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "oomphinc/composer-installers-extender": true,
-            "zaporylie/composer-drupal-optimizations": true
+            "zaporylie/composer-drupal-optimizations": true,
+            "php-http/discovery": true
         },
         "sort-packages": true
     }
