@@ -6,8 +6,8 @@
 # Use `drush uli` to get an access token.
 
 echo "-- Installo Municipes --------------------------------------------------"
-echo "drush -y site:install comune --locale=it --account-pass=${1}"
-drush -y site:install comune --locale=it --account-pass=${1}
+echo "drush -y site:install comune_profile --locale=it --account-pass=${1}"
+drush -y site:install comune_profile --locale=it --account-pass=${1}
 
 # echo "-- Localizzazione in Italiano ------------------------------------------"
 # drush -y config:set system.date country.default IT
