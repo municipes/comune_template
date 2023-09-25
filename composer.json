@@ -70,6 +70,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.11",
         "drupal/scheduler": "^2.0",
+        "drupal/schema_metatag": "^3.0",
         "drupal/search_api": "^1.29",
         "drupal/taxonomy_custom_controller": "^1.5",
         "drupal/taxonomy_menu": "^3.6",
