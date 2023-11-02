@@ -50,6 +50,8 @@
         "drupal/entity_reference_display": "^2.0",
         "drupal/events_log_track": "^3.1",
         "drupal/facets": "^2.0",
+        "drupal/feeds": "^3.0@beta",
+        "drupal/feeds_ex": "^1.0@beta",
         "drupal/field_group": "^3.4",
         "drupal/filelog": "^2.1",
         "drupal/focal_point": "^2.0",
