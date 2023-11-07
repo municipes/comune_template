@@ -52,6 +52,7 @@
         "drupal/facets": "^2.0",
         "drupal/feeds": "^3.0@beta",
         "drupal/feeds_ex": "^1.0@beta",
+        "drupal/feeds_tamper": "^2.0@beta",
         "drupal/field_group": "^3.4",
         "drupal/focal_point": "^2.0",
         "drupal/geocoder": "^4.9",
