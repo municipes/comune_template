@@ -85,7 +85,6 @@
         "drush/drush": "^11.6",
         "geocoder-php/nominatim-provider": "^5.7",
         "monolog/monolog": "^2.3.5",
-        "municipes/silfi_triplette": "^1.0",
         "municipes/privatum_documentum": "^1.x-dev",
         "municipes/libellus": "^1.x-dev",
         "municipes/nuntium": "^1.x-dev",
