@@ -49,6 +49,7 @@
         "drupal/entity_browser": "^2.9",
         "drupal/entity_reference_display": "^2.0",
         "drupal/events_log_track": "^3.1",
+	"drupal/externalauth": "^2.0",
         "drupal/facets": "^2.0",
         "drupal/feeds": "^3.0@beta",
         "drupal/feeds_ex": "^1.0@beta",
