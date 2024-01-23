@@ -68,6 +68,7 @@
         "drupal/menu_block": "^1.10",
         "drupal/metatag": "^2.0",
         "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_skip_on_404": "^1.1",
         "drupal/migrate_tools": "^6.0",
         "drupal/migrate_upgrade": "^4.0",
         "drupal/node_read_time": "^1.11",
