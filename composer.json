@@ -62,6 +62,7 @@
         "drupal/imce": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/leaflet": "^10.0",
+        "drupal/linkit": "^6.1",
         "drupal/media_video_micromodal": "^1.1",
         "drupal/memcache": "^2.5",
         "drupal/menu_block": "^1.10",
