@@ -57,6 +57,7 @@
         "drupal/feeds_ex": "^1.0@beta",
         "drupal/feeds_tamper": "^2.0@beta",
         "drupal/field_group": "^3.4",
+        "drupal/file_delete": "^2.0",
         "drupal/focal_point": "^2.0",
         "drupal/geocoder": "^4.9",
         "drupal/geofield": "^1.53",
