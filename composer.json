@@ -32,7 +32,7 @@
         "bower-asset/spectrum": "^1.8",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.6.0",
-        "drupal/address": "^1.12",
+        "drupal/address": "^2.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/auto_entitylabel": "^3.0",
         "drupal/backup_migrate": "^5.0",
