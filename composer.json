@@ -112,6 +112,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
+        "patches": {
+            "drupal/bootstrap_italia": {
+                "Drupal 10.4 compatibility": "https://patches.cmsdrupal.eu/bi107_drupal10-4.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
