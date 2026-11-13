@@ -1,0 +1,25 @@
+diff --git a/filelog.info.yml b/filelog.info.yml
+index ca9dfcd..950070c 100644
+--- a/filelog.info.yml
++++ b/filelog.info.yml
+@@ -1,6 +1,6 @@
+ name: File Log
+ type: module
+ description: Logs system events to a file.
+-core_version_requirement: ^9 || ^10
++core_version_requirement: ^10.1 || ^11
+ package: Logging
+ configure: system.logging_settings
+diff --git a/src/Logger/FileLog.php b/src/Logger/FileLog.php
+index 3b8c2dd..8059e2c 100644
+--- a/src/Logger/FileLog.php
++++ b/src/Logger/FileLog.php
+@@ -165,7 +165,7 @@ class FileLog implements LoggerInterface {
+     catch (FileLogException $error) {
+       // Log the exception, unless we were already logging a filelog error.
+       if ($context['channel'] !== 'filelog') {
+-        watchdog_exception('filelog', $error);
++        \Drupal\Component\Utility\DeprecationHelper::backwardsCompatibleCall(\Drupal::VERSION, '10.1.0', fn() => \Drupal\Core\Utility\Error::logException(\Drupal::logger('filelog'), $error), fn() => watchdog_exception('filelog', $error));
+       }
+       // Write the message directly to STDERR.
+       fwrite($this->stderr(), $entry . "\n");
